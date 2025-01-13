@@ -15,7 +15,6 @@
 </head>
 
 <body>
-   <h1>jopa</h1>
    <div class="wrapper">
       <main class="main">
          <!-- Облако -->
@@ -60,14 +59,10 @@
                      <div>Павел</div>
                   </div>
                   <div>
-                     <div class="list"><span>возраст</span><span>:</span><span>32</span></div>
+                     <div class="list"><span>age</span><span>:</span><span>32</span></div>
                      <div class="list"><span>work</span><span>:</span><span>qa-engineer</span></div>
                      <div class="list"><span>Power</span><span>:</span><span>Postman</span></div>
-<<<<<<< HEAD
-                     <div class="list"><span>город</span><span>:</span><span>Москва</span></div>
-=======
                      <div class="list"><span>location</span><span>:</span><span>moscow</span></div>
->>>>>>> 868d7e0456276508e69254c76ccb96dd0fd46320
 
                   </div>
                </div>
@@ -79,7 +74,15 @@
                <div class="link"><a href="mailto:pasharyzhkov@yandex.ru">Email</a></div>
               
 
-            </section>
+            </section class="links">
+            <button id="open" onclick="window.may.showModal()">Посмотреть Телеграм</button>
+            <dialog id="may">
+               <p>https://t.me/ryzhkov_pa</p>
+               <p>
+                 <button id="close" onclick="window.may.close()">Закрыть</button>
+               </p>
+             </dialog>
+             
          </div>
       </main>
    </div>
